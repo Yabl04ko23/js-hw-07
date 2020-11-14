@@ -17,13 +17,11 @@ const images = [
 ];
 
 const gallery = document.querySelector('#gallery');
-let array = [];
+let str = '';
 
 for (let i=0; i<images.length; i++) {
   let imgElement = `<li><img src="${images[i].url}" alt="${images[i].alt}"></li>`;
-  array.push(imgElement);
+  str += imgElement;
 }
 
-array.forEach((item)=>{
-  gallery.insertAdjacentHTML("beforeend", item);
-});
+gallery.insertAdjacentHTML("beforeend", str);

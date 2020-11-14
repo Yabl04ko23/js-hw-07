@@ -16,6 +16,4 @@ for (let i=0; i<ingredients.length; i++) {
   arr.push(ingredientLi);
 }
 
-arr.forEach((item)=>{
-  ingredientsUl.append(item);
-});
+ingredientsUl.append(...arr);
